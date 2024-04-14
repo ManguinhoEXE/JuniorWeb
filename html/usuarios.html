@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Tabla de Usuarios</title>
+</head>
+<body>
+  <header>
+    <nav class="overflow-hidden navbar navbar-expand-lg justify-content-between">
+        <a class="navbar-brand mx-3 fw-bold" href="../html/index.html" aria-current="page"><img src="../img/ESCUDO_JUNIOR.svg"
+                width="40" class="img-fluid" alt="Escudo Junior" /> JUNIOR FC
+        </a>
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <spanfixed-top class="navbar-toggler-icon" auto></span>
+        </button>
+        <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header justify-content-end text-white border-bottom">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">JUNIOR FC</h5>
+                <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+                <ul class="navbar-nav justify-content-lg-end align-items-center fs-5 flex-grow-1 pe-3">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" aria-current="page" href="../html/login.html">INICIAR SESIÓN</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="../html/create-account.html">REGISTRATE</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="../html/usuarios.html">USUARIOS</a>
+                    </li>
+                </ul>
+    </nav>
+</header>
+    <main class="container-fluid p-4">
+      <div class="container">
+    <div class="card card my-5 mx-5 border-2 bg-secondary border-white red-shadow-lg">
+        <table class="table table-secondary">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellidos</th>
+                <th scope="col">Email</th>
+              </tr>
+            </thead>
+            <tbody id="tableData">
+            </tbody>
+          </table>
+    </div>
+  </div>
+  </main>
+    <footer class="d-flex text-center justify-content-center h-auto">
+      <p>
+          <strong>© Copyright 2016.<br>Club Deportivo Popular Junior F.C.S.A.</strong>
+          <br>Pagina Oficial de Junior FC<br>
+          <a href="#">POLÍTICA DE PRIVACIDAD</a>
+      </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+      <script src="../function/junior.js"></script>
+</body>
+</html>
