@@ -1,7 +1,5 @@
 const cuerpotabla = document.getElementById('tableData');
 let i = 1;
-const jsonData = [];
-let users= [];
 
 const register = (event) =>{
 
@@ -10,8 +8,11 @@ const register = (event) =>{
     const nombre = document.getElementById('nombre').value;
     const apellidos = document.getElementById('Apellidos').value;
     const email = document.getElementById('email').value;
+    const fecha = document.getElementById('dateOfBirth').value;
+    const password = document.getElementById('password').value;
+    const confirm = document.getElementById('passwordconfirm').value;
 
-    if (nombre === '' || apellidos === '' || email === '') {
+    if (nombre === '' || apellidos === '' || email === '' || fecha === '' || password === '' || confirm === '') {
         alert('Por favor, complete todos los campos.');
         return; // Salir de la función si falta algún dato
       }
@@ -39,10 +40,6 @@ const register = (event) =>{
       document.getElementById('email').value = '';
       document.getElementById('password').value = '';
       document.getElementById('passwordconfirm').value = '';
-
-    const data = { "id": i, "nombre": nombre, "Apellidos": apellidos, "Email": email};
-    jsonData.push(data);
-    users.push(data);
     i++;
 };
 
